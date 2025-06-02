@@ -1,0 +1,314 @@
+/* General Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #000000; /* Main background set to black */
+    color: #f0f0f0; /* Light text for readability on dark background */
+    line-height: 1.6;
+    scroll-behavior: smooth;
+}
+
+.container {
+    width: 85%;
+    margin: auto;
+    overflow: hidden;
+    padding: 0 20px;
+}
+
+/* Header & Navigation */
+header {
+    /* White to slight aqua blueish gradient from left to right */
+    background: linear-gradient(to right, #ffffff, #e0f2f7);
+    color: #333; /* Dark text for header */
+    padding: 1rem 0;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1); /* Lighter shadow for a light background */
+}
+
+header a {
+    color: #333; /* Dark links for header */
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 16px;
+    transition: color 0.3s ease;
+}
+
+header a:hover {
+    color: #2193b0; /* Aqua blue on hover for header links */
+}
+
+header ul {
+    padding: 0;
+    list-style: none;
+    text-align: center;
+}
+
+header li {
+    display: inline;
+    padding: 0 20px;
+}
+
+header #logo {
+    float: left;
+    font-size: 24px;
+    font-weight: bold;
+    padding-left: 20px;
+    color: #333; /* Dark color for the logo */
+}
+header nav {
+    float: right;
+    padding-right: 20px;
+}
+
+
+/* Hero Section - Kept original gradient and colors */
+#hero {
+    background: linear-gradient(to right, #6dd5ed, #2193b0); /* Original gradient preserved */
+    color: #fff; /* White text for contrast on gradient */
+    height: 80vh;
+    min-height: 400px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 0 20px;
+    margin-top: 60px; /* Adjust based on header height */
+}
+
+#hero h1 {
+    font-size: 3rem;
+    margin-bottom: 10px;
+}
+
+/* Make only the paragraph black within the hero section */
+#hero p {
+    font-size: 1.5rem;
+    color: #000000; /* Set the text color to black */
+}
+
+
+/* Sections */
+section {
+    padding: 60px 0;
+    border-bottom: 1px solid #333; /* Dark border for separation on black */
+    background-color: #000; /* Ensure sections are black */
+}
+
+section:last-of-type {
+    border-bottom: none;
+}
+
+section h2 {
+    text-align: center;
+    margin-bottom: 40px;
+    font-size: 2.5rem;
+    color: #6dd5ed; /* Highlight headings with aqua blue */
+}
+
+/* About Me Section */
+#about .about-content {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+}
+
+#about .about-text {
+    flex-basis: 60%;
+    text-align: left;
+}
+#about .about-text p {
+    font-size: 1.1rem;
+    color: #c0c0c0; /* Slightly muted light text */
+}
+
+#about .achievements {
+    background-color: #1a1a1a; /* Dark background for achievements block */
+    padding: 20px;
+    border-radius: 8px;
+    margin-top: 20px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.2);
+}
+#about .achievements h3 {
+    color: #2193b0; /* Aqua color for achievement heading */
+    margin-bottom: 10px;
+}
+#about .achievements ul {
+    list-style: none;
+    padding: 0;
+}
+#about .achievements li {
+    margin-bottom: 8px;
+    font-weight: bold;
+    color: #a0a0a0; /* Muted light color for list items */
+}
+
+
+/* Skills Section */
+#skills .skills-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    text-align: center;
+}
+
+#skills .skill-item {
+    background: #1a1a1a; /* Dark background for skill items */
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.2);
+    transition: transform 0.3s ease;
+}
+
+#skills .skill-item:hover {
+    transform: translateY(-5px);
+    background-color: #2a2a2a; /* Slightly lighter on hover */
+}
+
+#skills .skill-item h3 {
+    color: #6dd5ed; /* Aqua blue for skill headings */
+    margin-bottom: 10px;
+}
+#skills .skill-item p {
+    color: #b0b0b0; /* Muted light text for descriptions */
+}
+#skills .skill-item .proficient {
+    font-weight: bold;
+    color: #4CAF50; /* Green for proficient */
+    display: block;
+    font-size: 0.9em;
+    margin-top: 5px;
+}
+#skills .skill-item .proficient::before {
+    content: "🚀 "; /* Rocket emoji for proficient */
+}
+
+
+/* Projects Section */
+#projects .project-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+}
+
+#projects .project-item {
+    background: #1a1a1a; /* Dark background for project items */
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.2);
+    overflow: hidden;
+    transition: transform 0.3s ease;
+}
+#projects .project-item:hover {
+    transform: scale(1.03);
+    background-color: #2a2a2a; /* Slightly lighter on hover */
+}
+
+#projects .project-item img { /* Placeholder for project images */
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    background-color: #333; /* Darker placeholder color */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #888; /* Muted light text for placeholder */
+    font-style: italic;
+}
+#projects .project-item .project-info {
+    padding: 20px;
+}
+
+#projects .project-item h3 {
+    color: #6dd5ed; /* Aqua blue for project titles */
+}
+#projects .project-item p {
+    color: #b0b0b0; /* Muted light text for descriptions */
+}
+
+#projects .project-item a {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 8px 15px;
+    background: #333; /* Dark button background */
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background 0.3s ease;
+}
+#projects .project-item a:hover {
+    background: #6dd5ed; /* Aqua blue on hover for buttons */
+}
+
+
+/* Contact Section */
+#contact p {
+    text-align: center;
+    font-size: 1.2rem;
+    color: #c0c0c0; /* Muted light text for description */
+}
+#contact .contact-links {
+    text-align: center;
+    margin-top: 20px;
+}
+#contact .contact-links a {
+    margin: 0 15px;
+    text-decoration: none;
+    font-size: 1.5rem; /* Increased icon size */
+    color: #6dd5ed; /* Aqua blue for contact links */
+    transition: color 0.3s ease;
+}
+#contact .contact-links a:hover {
+    color: #fff; /* White on hover for contact links */
+}
+/* Basic icons (consider FontAwesome for more options) */
+#contact .contact-links .icon-github::before { content: "GH"; font-weight: bold; }
+#contact .contact-links .icon-linkedin::before { content: "LI"; font-weight: bold; }
+#contact .contact-links .icon-email::before { content: "✉"; }
+
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 20px;
+    background: #000; /* Black footer */
+    color: #f0f0f0; /* Light text */
+}
+
+/* Responsive Design */
+@media(max-width: 768px) {
+    header #logo {
+        float: none;
+        text-align: center;
+        margin-bottom: 10px;
+    }
+    header nav {
+        float: none;
+        text-align: center;
+    }
+    header li {
+        display: block;
+        padding: 10px 0;
+    }
+    #hero h1 {
+        font-size: 2.5rem;
+    }
+    #hero p {
+        font-size: 1.2rem;
+    }
+    #about .about-content {
+        flex-direction: column;
+    }
+    #about .about-text {
+        flex-basis: 100%;
+        text-align: center;
+        margin-bottom: 20px;
+    }
+    #skills .skills-grid {
+        grid-template-columns: 1fr; /* Single column on smaller screens */
+    }
+}

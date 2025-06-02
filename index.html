@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Saud's Portfolio</title>
+    <link rel="stylesheet" href="portfolio.css">
+</head>
+<body>
+
+    <header>
+        <div class="container">
+            <div id="logo">Saud bin Abdul Mutallib</div>
+            <nav>
+                <ul>
+                    <li><a href="#hero">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section id="hero">
+        <div class="container">
+            <h1>Hi, I'm Saud!</h1>
+            <p>A passionate developer and problem solver.</p>
+        </div>
+    </section>
+
+    <section id="about">
+        <div class="container">
+            <h2>About Me</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <p>
+                        I am a passionate and enthusiastic individual with a strong foundation in back end development and database management I am also passionate about front end development.
+                        I enjoy tackling challenges and learning new technologies to create efficient and impactful solutions.
+                    </p>
+                    <div class="achievements">
+                        <h3>Academic Achievements 🏆</h3>
+                        <ul>
+                            <li>Scored <b>95%</b> in <b>CBSE Mathematics</b>.</li>
+                            <li>Achieved an aggregate of <b>90%</b> in <b>CBSE</b>.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="skills">
+        <div class="container">
+            <h2>My Skills</h2>
+                <div class="skills-grid">
+                <div class="skill-item">
+                    <img src="python.jpg" alt="Python Icon" style="width:50px; height:50px; margin-bottom:10px;">
+                    <h3>Python</h3>
+                    <p>learnt python in 14 years of age and is currently very proficient in python</p>
+                    <span class="proficient">highly Proficient</span>
+                </div>
+                <div class="skill-item">
+                    <img src="sql.jpeg" alt="MySQL Icon" style="width:50px; height:50px; margin-bottom:10px;">
+                    <h3>MySQL Database Management</h3>
+                    <p>I am very proficient with Designing and Managing databases using MYSQL</p>
+                    <span class="proficient">Highly Proficient</span>
+                </div>
+                <div class="skill-item">
+                    <img src="html.jpeg" alt="HTML5 Icon" style="width:50px; height:50px; margin-bottom:10px;">
+                    <h3>HTML5</h3>
+                    <p>I am thorough with the internet protocols</p>
+                    <span class="proficient">Proficient</span>
+                </div>
+                <div class="skill-item">
+                    <img src="css.jpeg" alt="CSS3 Icon" style="width:50px; height:50px; margin-bottom:10px;">
+                    <h3>CSS3</h3>
+                    <p>creative styling of web applications</p>
+                    <span class="proficient">Proficient</span>
+                </div>
+                <div class="skill-item">
+                    <img src="javascript.jpeg" alt="JavaScript Icon" style="width:50px; height:50px; margin-bottom:10px;">
+                    <h3>JavaScript</h3>
+                    <p>Adding interactivity to sites.</p>
+                    <span class="proficient">Proficient</span>
+                </div>
+                
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="projects">
+        <div class="container">
+            <h2>My Projects</h2>
+            <div class="project-grid">
+                <article class="project-item">
+                    <img src="image.png" alt="Project 1 Screenshot">
+                    <div class="project-info">
+                        <h3>cashier app</h3>
+                        <p>This is a simple, yet functional, Graphical User Interface (GUI) based Cashier System developed using Python's built-in tkinter library.</p>
+                        <a href="https://github.com/SaudbinAbdulMutalib/cashier-app-using-python-tkinter/blob/main/cashier.py" target="_blank">View Project</a>
+                        <a href="https://github.com/SaudbinAbdulMutalib/cashier-app-using-python-tkinter" target="_blank">GitHub Repo</a>
+                    </div>
+                </article>
+
+                <article class="project-item">
+                    <img src="hackathon.jpeg" alt="Placeholder for future project">
+                    <div class="project-info">
+                        <h3>upcoming projects</h3>
+                        <p>currently grinding hackathons, future projects will be updated here</p>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact">
+        <div class="container">
+            <h2>Get In Touch</h2>
+            <p>I'm always open to discussing new projects, creative ideas, or opportunities to be part of your visions.</p>
+            <div class="contact-links">
+                <a href="https://github.com/SaudbinAbdulMutalib" target="_blank" class="icon-github" title="GitHub">GitHub</a>
+                <a href="https://www.linkedin.com/in/saud-bin-abdul-mutallib/" target="_blank" class="icon-linkedin" title="LinkedIn">LinkedIn</a>
+                <a href="mailto:saud_cs@outlook.com" class="icon-email" title="Email" target="_blank">Email</a>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; <span id="currentYear"></span> Saud bin Abdul Mutallib. All Rights Reserved.</p>
+    </footer>
+
+    <script>
+        // Smooth scrolling for navigation links
+        document.querySelectorAll('header a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+
+        // Set current year in footer
+        document.getElementById('currentYear').textContent = new Date().getFullYear();
+
+        // Simple scroll reveal animation for sections (optional)
+        const sections = document.querySelectorAll('section');
+        const options = {
+            root: null, //it is the viewport
+            threshold: 0.3, //10% of the item is visible
+            rootMargin: "0px"
+        };
+
+        const observer = new IntersectionObserver(function(entries, observer) {
+            entries.forEach(entry => {
+                if(!entry.isIntersecting){
+                    return;
+                }
+                entry.target.style.opacity = 1;
+                entry.target.style.transform = "translateY(0)";
+                // observer.unobserve(entry.target); // unobserve after animation
+            });
+        }, options);
+
+        sections.forEach(section => {
+            section.style.opacity = 0; // Initially hide sections
+            section.style.transform = "translateY(20px)"; // Move them down slightly
+            section.style.transition = "opacity 0.6s ease-out, transform 0.6s ease-out";
+            observer.observe(section);
+        });
+
+        // Specific styling for hero section as it's visible on load
+        const heroSection = document.getElementById('hero');
+        if(heroSection){
+            heroSection.style.opacity = 1;
+            heroSection.style.transform = "translateY(0)";
+        }
+    </script>
+
+</body>
+</html>

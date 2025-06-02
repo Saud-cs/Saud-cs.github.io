@@ -1,2 +1,2 @@
-view my portfolio here --------> https://saud-cs.github.io/SaudbinAbdulMutalib.github.io
+view my portfolio here --------> https://saud-cs.github.io/
 

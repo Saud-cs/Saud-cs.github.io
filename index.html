@@ -3,14 +3,23 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="saud's portfolio,saud bin abdul mutallib,sauds portfolio,saud bin abdul mutallib portfolio,saud">
+    <meta name="description" content="Saud bin Abdul Mutallib's personal portfolio showcasing his skills and projects.">
     <title>Saud's Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="portfolio.css">
 </head>
 <body>
-
+ 
+    <!-- Custom Cursor -->
+    <div class="cursor-dot" id="cursorDot"></div>
+    <div class="cursor-ring" id="cursorRing"></div>
+ 
     <header>
         <div class="container">
-            <div id="logo">Saud bin Abdul Mutallib</div>
+            <div id="logo">Saud<span style="color:var(--accent)">.</span></div>
             <nav>
                 <ul>
                     <li><a href="#hero">Home</a></li>
@@ -22,14 +31,14 @@
             </nav>
         </div>
     </header>
-
+ 
     <section id="hero">
         <div class="container">
-            <h1>Hi, I'm Saud!</h1>
+            <h1>Hi, I'm <span>Saud!</span></h1>
             <h3>A passionate developer and problem solver.</h3>
         </div>
     </section>
-
+ 
     <section id="about">
         <div class="container">
             <h2>Education</h2>
@@ -47,72 +56,71 @@
             </div>
         </div>
     </section>
-
+ 
     <section id="skills">
         <div class="container">
             <h2>My Skills</h2>
-                <div class="skills-grid">
+            <div class="skills-grid">
                 <div class="skill-item">
-                    <img src="python.jpg" alt="Python Icon" style="width:50px; height:50px; margin-bottom:10px;">
+                    <div class="skill-accent-dot"></div>
+                    <img src="python.jpg" alt="Python Icon">
                     <h3>Python</h3>
-                    <p>learnt python in 14 years of age and is currently very proficient in python</p>
-                    <span class="proficient">highly Proficient</span>
-                </div>
-                <div class="skill-item">
-                    <img src="sql.jpeg" alt="MySQL Icon" style="width:50px; height:50px; margin-bottom:10px;">
-                    <h3>MySQL Database Management</h3>
-                    <p>I am very proficient with Designing and Managing databases using MYSQL</p>
+                    <p>Learnt Python at 14 and currently highly proficient in the language.</p>
                     <span class="proficient">Highly Proficient</span>
                 </div>
                 <div class="skill-item">
-                    <img src="html.jpeg" alt="HTML5 Icon" style="width:50px; height:50px; margin-bottom:10px;">
+                    <div class="skill-accent-dot"></div>
+                    <img src="sql.jpeg" alt="MySQL Icon">
+                    <h3>MySQL</h3>
+                    <p>Designing and managing databases using MySQL with confidence.</p>
+                    <span class="proficient">Highly Proficient</span>
+                </div>
+                <div class="skill-item">
+                    <div class="skill-accent-dot"></div>
+                    <img src="html.jpeg" alt="HTML5 Icon">
                     <h3>HTML5</h3>
-                    <p>I am thorough with the internet protocols</p>
+                    <p>Thorough knowledge of web structure and internet protocols.</p>
                     <span class="proficient">Proficient</span>
                 </div>
                 <div class="skill-item">
-                    <img src="css.jpeg" alt="CSS3 Icon" style="width:50px; height:50px; margin-bottom:10px;">
+                    <div class="skill-accent-dot"></div>
+                    <img src="css.jpeg" alt="CSS3 Icon">
                     <h3>CSS3</h3>
-                    <p>creative styling of web applications</p>
+                    <p>Creative styling of web applications with modern CSS.</p>
                     <span class="proficient">Proficient</span>
                 </div>
                 <div class="skill-item">
-                    <img src="javascript.jpeg" alt="JavaScript Icon" style="width:50px; height:50px; margin-bottom:10px;">
+                    <div class="skill-accent-dot"></div>
+                    <img src="javascript.jpeg" alt="JavaScript Icon">
                     <h3>JavaScript</h3>
-                    <p>Adding interactivity to sites.</p>
+                    <p>Adding interactivity and dynamic behaviour to sites.</p>
                     <span class="proficient">Proficient</span>
                 </div>
                 <div class="skill-item">
-                    <img src="github.png" alt="GitHub Icon" style="width:50px; height:50px; margin-bottom:10px;">
+                    <div class="skill-accent-dot"></div>
+                    <img src="github.png" alt="GitHub Icon">
                     <h3>GitHub</h3>
-                    <p>Version Control and Collaboration using GitHub</p>
+                    <p>Version control and collaboration using GitHub.</p>
                     <span class="proficient">Proficient</span>
-
                 </div>
                 <div class="skill-item">
-                    <img src="blender.png" alt="Blender Icon" style="width:50px; height:50px; margin-bottom:10px;">
-                    <h3>Blender</h3>    
-                    <p>3D Modeling and Animation using Blender</p>
+                    <div class="skill-accent-dot"></div>
+                    <img src="blender.png" alt="Blender Icon">
+                    <h3>Blender</h3>
+                    <p>3D modelling and animation using Blender.</p>
                     <span class="proficient">Intermediate</span>
                 </div>
                 <div class="skill-item">
-                    <img src="AI.png" alt="AI and ML" style="width:50px; height:50px; margin-bottom:10px;">
-                    <h3>AI integration</h3>
-                    <p>Integrating AI to create intelligent, scalable solutions,building conversational agents, predictive models, and automation that enhance user experiences, accelerate decision-making, and turn data into actionable insights.</p>
-                    <span>Intermediate</span>
-
-                </div>
-                
-                <div>
-                    
-                </div>
-                </div>
-                
+                    <div class="skill-accent-dot"></div>
+                    <img src="AI.png" alt="AI and ML">
+                    <h3>AI Integration</h3>
+                    <p>Building conversational agents, predictive models, and automation that enhance user experiences and turn data into insights.</p>
+                    <span class="proficient">Intermediate</span>
                 </div>
             </div>
         </div>
     </section>
-
+ 
     <section id="projects">
         <div class="container">
             <h2>My Projects</h2>
@@ -120,117 +128,140 @@
                 <article class="project-item">
                     <img src="image.png" alt="Admin bank management system">
                     <div class="project-info">
-                        <h3>Admin based bank management system</h3>
-                        <p>It is an admin based bank management system with an integrated ai chatbot for assisting the admin</p>
-                        <a href="https://github.com/Saud-cs/bank-management-system/blob/main/bankmanagementsystem.py" target="_blank">View Project</a>
-                        <a href="https://github.com/Saud-cs/bank-management-system/" target="_blank">GitHub Repo</a>
+                        <h3>Admin Bank Management System</h3>
+                        <p>An admin-based bank management system with an integrated AI chatbot for assisting the admin.</p>
+                        <div>
+                            <a href="https://github.com/Saud-cs/bank-management-system/blob/main/bankmanagementsystem.py" target="_blank">View Project</a>
+                            <a href="https://github.com/Saud-cs/bank-management-system/" target="_blank">GitHub Repo</a>
+                        </div>
                     </div>
                 </article>
                 <article class="project-item">
                     <img src="simple mathematics.jpg" alt="Mathematics expert">
                     <div class="project-info">
-                        <h2>Saud's Middle Term formula</h2>
-                        <p>I have managed to make a Formula that lets you find the terms that the middle term must be split into for proper grouping of the factors of the quadratic equation.</p>
-                        <a href="https://github.com/Saud-cs/Sauds-middle-term-formula" target="_blank">Repository</a>
-                        <a href="https://github.com/Saud-cs/Sauds-middle-term-formula/blob/main/final%20publish(Saud's%20Middle%20Term%20Formula).pdf" target="_blank">documents</a>
+                        <h3>Saud's Middle Term Formula</h3>
+                        <p>A formula that finds the terms the middle term must be split into for proper grouping of factors in a quadratic equation.</p>
+                        <div>
+                            <a href="https://github.com/Saud-cs/Sauds-middle-term-formula" target="_blank">Repository</a>
+                            <a href="https://github.com/Saud-cs/Sauds-middle-term-formula/blob/main/final%20publish(Saud's%20Middle%20Term%20Formula).pdf" target="_blank">Documents</a>
+                        </div>
                     </div>
                 </article>
-
                 <article class="project-item">
                     <img src="image.png" alt="Cashier App">
                     <div class="project-info">
-                        <h3>cashier app</h3>
-                        <p>This is a simple, yet functional, Graphical User Interface (GUI) based Cashier System developed using Python's built-in tkinter library.</p>
-                        <a href="https://github.com/Saud-cs/cashier-app-using-python-tkinter/blob/main/cashier.py" target="_blank">View Project</a>
-                        <a href="https://github.com/Saud-cs/cashier-app-using-python-tkinter" target="_blank">GitHub Repo</a>
+                        <h3>Cashier App</h3>
+                        <p>A simple yet functional GUI-based Cashier System developed using Python's built-in tkinter library.</p>
+                        <div>
+                            <a href="https://github.com/Saud-cs/cashier-app-using-python-tkinter/blob/main/cashier.py" target="_blank">View Project</a>
+                            <a href="https://github.com/Saud-cs/cashier-app-using-python-tkinter" target="_blank">GitHub Repo</a>
+                        </div>
                     </div>
                 </article>
-
                 <article class="project-item">
                     <img src="image.png" alt="Handwritten Digit Recognition">
                     <div class="project-info">
-                    <h3>Handwritten Digit Recognition</h3>
-                    <p>A machine learning project that recognizes handwritten digits using the MNIST dataset and a neural network model built with TensorFlow and Keras.</p>
-                    <a href="https://github.com/Saud-cs/hand-written-digit-recognization-using-ai/blob/main/Hand%20written%20digit%20recognization.py" target="_blank">View Project</a>
-                    <a href="https://github.com/Saud-cs/hand-written-digit-recognization-using-ai" target="_blank">GitHub Repo</a>
-                    
+                        <h3>Handwritten Digit Recognition</h3>
+                        <p>A machine learning project recognising handwritten digits using the MNIST dataset and a neural network built with TensorFlow and Keras.</p>
+                        <div>
+                            <a href="https://github.com/Saud-cs/hand-written-digit-recognization-using-ai/blob/main/Hand%20written%20digit%20recognization.py" target="_blank">View Project</a>
+                            <a href="https://github.com/Saud-cs/hand-written-digit-recognization-using-ai" target="_blank">GitHub Repo</a>
+                        </div>
+                    </div>
                 </article>
-
                 <article class="project-item">
-                    <img src="hackathon.jpeg" alt="Placeholder for future project">
+                    <img src="hackathon.jpeg" alt="Upcoming projects">
                     <div class="project-info">
-                        <h3>upcoming projects</h3>
-                        <p>currently grinding hackathons, future projects will be updated here</p>
+                        <h3>Upcoming Projects</h3>
+                        <p>Currently grinding hackathons — future projects will be updated here.</p>
                     </div>
                 </article>
             </div>
         </div>
     </section>
-
+ 
     <section id="contact">
         <div class="container">
             <h2>Get In Touch</h2>
             <p>I'm always open to discussing new projects, creative ideas, or opportunities to be part of your visions.</p>
             <div class="contact-links">
-                <a href="https://github.com/Saud-cs" target="_blank" class="icon-github" title="GitHub">GitHub</a>
-                <a href="https://www.linkedin.com/in/saud-bin-abdul-mutallib/" target="_blank" class="icon-linkedin" title="LinkedIn">LinkedIn</a>
-                <a href="mailto:saud_cs@outlook.com" class="icon-email" title="Email" target="_blank">Email</a>
+                <a href="https://github.com/Saud-cs" target="_blank" title="GitHub">⬡ GitHub</a>
+                <a href="https://www.linkedin.com/in/saud-bin-abdul-mutallib/" target="_blank" title="LinkedIn">◈ LinkedIn</a>
+                <a href="mailto:saud_cs@outlook.com" class="icon-email" title="Email" target="_blank">✉ Email</a>
             </div>
         </div>
     </section>
-
+ 
     <footer>
         <p>&copy; <span id="currentYear"></span> Saud bin Abdul Mutallib. All Rights Reserved.</p>
     </footer>
-
+ 
     <script>
-        // Smooth scrolling for navigation links
+        // ── Custom Cursor ──────────────────────────
+        const dot  = document.getElementById('cursorDot');
+        const ring = document.getElementById('cursorRing');
+        let mx = 0, my = 0, rx = 0, ry = 0;
+ 
+        document.addEventListener('mousemove', e => {
+            mx = e.clientX; my = e.clientY;
+            dot.style.left  = mx + 'px';
+            dot.style.top   = my + 'px';
+        });
+ 
+        function lerp(a, b, t) { return a + (b - a) * t; }
+        function animCursor() {
+            rx = lerp(rx, mx, 0.12);
+            ry = lerp(ry, my, 0.12);
+            ring.style.left = rx + 'px';
+            ring.style.top  = ry + 'px';
+            requestAnimationFrame(animCursor);
+        }
+        animCursor();
+ 
+        document.querySelectorAll('a, button').forEach(el => {
+            el.addEventListener('mouseenter', () => {
+                ring.style.width  = '52px';
+                ring.style.height = '52px';
+                ring.style.borderColor = 'var(--accent)';
+                dot.style.opacity = '0';
+            });
+            el.addEventListener('mouseleave', () => {
+                ring.style.width  = '36px';
+                ring.style.height = '36px';
+                ring.style.borderColor = 'rgba(0,229,255,0.5)';
+                dot.style.opacity = '1';
+            });
+        });
+ 
+        // ── Smooth Scroll ──────────────────────────
         document.querySelectorAll('header a[href^="#"]').forEach(anchor => {
             anchor.addEventListener('click', function (e) {
                 e.preventDefault();
-                document.querySelector(this.getAttribute('href')).scrollIntoView({
-                    behavior: 'smooth'
-                });
+                document.querySelector(this.getAttribute('href')).scrollIntoView({ behavior: 'smooth' });
             });
         });
-
-        // Set current year in footer
+ 
+        // ── Footer Year ────────────────────────────
         document.getElementById('currentYear').textContent = new Date().getFullYear();
-
-        // Simple scroll reveal animation for sections (optional)
+ 
+        // ── Scroll Reveal ──────────────────────────
         const sections = document.querySelectorAll('section');
-        const options = {
-            root: null, //it is the viewport
-            threshold: 0.3, //10% of the item is visible
-            rootMargin: "0px"
-        };
-
-        const observer = new IntersectionObserver(function(entries, observer) {
+        const observer = new IntersectionObserver((entries) => {
             entries.forEach(entry => {
-                if(!entry.isIntersecting){
-                    return;
+                if (entry.isIntersecting) {
+                    entry.target.style.opacity = 1;
+                    entry.target.style.transform = 'translateY(0)';
                 }
-                entry.target.style.opacity = 1;
-                entry.target.style.transform = "translateY(0)";
-                // observer.unobserve(entry.target); // unobserve after animation
             });
-        }, options);
-
-        sections.forEach(section => {
-            section.style.opacity = 0; // Initially hide sections
-            section.style.transform = "translateY(20px)"; // Move them down slightly
-            section.style.transition = "opacity 0.6s ease-out, transform 0.6s ease-out";
-            observer.observe(section);
-        });
-
-        // Specific styling for hero section as it's visible on load
-        const heroSection = document.getElementById('hero');
-        if(heroSection){
-            heroSection.style.opacity = 1;
-            heroSection.style.transform = "translateY(0)";
-        }
+        }, { threshold: 0.1 });
+ 
+        sections.forEach(s => observer.observe(s));
+ 
+        // Hero always visible
+        const hero = document.getElementById('hero');
+        if (hero) { hero.style.opacity = 1; hero.style.transform = 'translateY(0)'; }
     </script>
-
+ 
 </body>
 </html>
 
